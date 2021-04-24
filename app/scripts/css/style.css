@@ -1,0 +1,122 @@
+/* Fonts */
+@font-face {
+  font-family: OpenSans;
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: Ribeye;
+  src: url("../../assets/fonts/Ribeye-Regular.ttf");
+}
+
+body {font-family: OpenSans;}
+a {text-decoration: none;}
+/* Global */
+.text-fc {color: #FC535D !important;}
+.text-c4 {color: #C4C4C4 !important;}
+.btn-fc {
+  background-color: #FC535D;
+  color: #FFF;
+}
+.btn-fc:hover {
+  background-color: #ff606b;
+  color: #FFF;
+}
+/* Section Header */
+.section-header .navbar ul.navbar-nav li.nav-item  {border-right: 1px solid #333;}
+.section-header .navbar .navbar-brand img {width: 100%;}
+.section-header .navbar {z-index: 999999;}
+
+/* Section Banner */
+.section-banner {
+  background-color: #FCF3EE;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 700px;
+  width: 100%;
+}
+.section-banner .carousel-inner .carousel-item .slide-1 {
+  background-image: url("../../assets/images/banner-slide-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.section-banner .carousel-inner .carousel-item .slide-2 {
+  background-image: url("../../assets/images/banner-slide-2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.section-banner .carousel-inner .carousel-item .slide-3 {
+  background-image: url("../../assets/images/banner-slide-3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.section-banner .carousel-inner .carousel-item h1 {
+  background-color: #FC535D;
+  font-family: Ribeye;
+  position: absolute;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 0;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+.section-banner .signup-form {
+  background-color: #FFF;
+  padding: 20px 30px;
+  height: 600px;
+}
+.section-banner .signup-form h1 {font-family: Ribeye;}
+.section-banner .signup-form h4 {
+  font-family: Poppins;
+  color: #595959;
+  margin-top: -5px;
+}
+.section-banner .signup-form form p {
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.section-banner .signup-form form p:not(:first-child) {margin-top: 5px;}
+.section-banner .signup-form form input {
+  font-family: Poppins;
+}
+.section-banner .signup-form form select {
+  font-family: Poppins;
+  width: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 94%;
+}
+.section-banner .signup-form form .d-flex div:first-child {margin-right: 3.5px;}
+.section-banner .signup-form form .d-flex div:last-child {margin-left: 3.5px;}
+@media (max-width:576px) {
+  .section-header .navbar ul.navbar-nav li.nav-item a.nav-link {
+    padding-left: 0 !important;
+  }
+  .section-banner .carousel-inner {
+    margin-top: 600px;
+  }
+  .section-banner .signup-form form select {
+    background-position-x: 85%;
+  }
+}
+@media (max-width:768px) {
+  .section-banner {height: 625px;}
+  .section-banner .carousel-inner {
+    margin-top: 600px;
+  }
+  .section-banner .signup-form {
+    height: 575px;
+  }
+}
