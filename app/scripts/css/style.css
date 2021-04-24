@@ -18,17 +18,43 @@ a {text-decoration: none;}
 .text-fc {color: #FC535D !important;}
 .text-c4 {color: #C4C4C4 !important;}
 .btn-fc {
-  background-color: #FC535D;
-  color: #FFF;
+  background-color: #FC535D !important;
+  color: #FFF !important;
 }
 .btn-fc:hover {
   background-color: #ff606b;
   color: #FFF;
 }
 /* Section Header */
+.section-header .navbar  {
+  box-shadow: 5px 10px 18px #888888;
+  z-index: 999998;
+}
 .section-header .navbar ul.navbar-nav li.nav-item  {border-right: 1px solid #333;}
 .section-header .navbar .navbar-brand img {width: 100%;}
-.section-header .navbar {z-index: 999999;}
+.section-header .navbar .navbar-toggler {z-index: 999999;}
+
+@media screen and (max-width: 576px) {
+  .section-header .navbar .navbar-collapse {
+    height: 100vh;
+    transition: 0s;
+  }
+  .section-header .navbar .navbar-collapse ul.navbar-nav {
+    height: calc(100% - 50px); 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
+    display: flex;
+    margin: 0;
+    width: 100%; 
+    padding: 0;
+    top: 35px; 
+  }
+  .section-header .navbar ul.navbar-nav li.nav-item {
+    border-right: none;
+  }
+}
+
 
 /* Section Banner */
 .section-banner {
@@ -39,6 +65,7 @@ a {text-decoration: none;}
   display: flex;
   height: 700px;
   width: 100%;
+  margin-top: 100px;
 }
 .section-banner .carousel-inner .carousel-item .slide-1 {
   background-image: url("../../assets/images/banner-slide-1.jpg");
@@ -70,6 +97,7 @@ a {text-decoration: none;}
   bottom: 0;
 }
 .section-banner .signup-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFF;
   padding: 20px 30px;
   height: 600px;
@@ -85,9 +113,7 @@ a {text-decoration: none;}
   margin-top: 30px;
 }
 .section-banner .signup-form form p:not(:first-child) {margin-top: 5px;}
-.section-banner .signup-form form input {
-  font-family: Poppins;
-}
+.section-banner .signup-form form input {font-family: Poppins;}
 .section-banner .signup-form form select {
   font-family: Poppins;
   width: 50%;
@@ -101,22 +127,13 @@ a {text-decoration: none;}
 .section-banner .signup-form form .d-flex div:first-child {margin-right: 3.5px;}
 .section-banner .signup-form form .d-flex div:last-child {margin-left: 3.5px;}
 @media (max-width:576px) {
-  .section-header .navbar ul.navbar-nav li.nav-item a.nav-link {
-    padding-left: 0 !important;
-  }
-  .section-banner .carousel-inner {
-    margin-top: 600px;
-  }
-  .section-banner .signup-form form select {
-    background-position-x: 85%;
-  }
+  .section-header .navbar ul.navbar-nav li.nav-item a.nav-link {padding-left: 0 !important;}
+  .section-banner {margin-top: 120px;}
+  .section-banner .carousel-inner {margin-top: 600px;}
+  .section-banner .signup-form form select {background-position-x: 85%;}
 }
 @media (max-width:768px) {
   .section-banner {height: 625px;}
-  .section-banner .carousel-inner {
-    margin-top: 600px;
-  }
-  .section-banner .signup-form {
-    height: 575px;
-  }
+  .section-banner .carousel-inner {margin-top: 600px;}
+  .section-banner .signup-form {height: 575px;}
 }
