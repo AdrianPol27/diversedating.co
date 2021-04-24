@@ -59,31 +59,29 @@ a {text-decoration: none;}
 /* Section Banner */
 .section-banner {
   background-color: #FCF3EE;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-  height: 700px;
+  height: 900px;
   width: 100%;
-  margin-top: 100px;
 }
 .section-banner .carousel-inner .carousel-item .slide-1 {
   background-image: url("../../assets/images/banner-slide-1.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  margin-top: 140px;
+  height: 740px;
 }
 .section-banner .carousel-inner .carousel-item .slide-2 {
   background-image: url("../../assets/images/banner-slide-2.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  margin-top: 140px;
+  height: 740px;
 }
 .section-banner .carousel-inner .carousel-item .slide-3 {
   background-image: url("../../assets/images/banner-slide-3.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  margin-top: 140px;
+  height: 740px;
 }
 .section-banner .carousel-inner .carousel-item h1 {
   background-color: #FC535D;
@@ -100,7 +98,8 @@ a {text-decoration: none;}
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFF;
   padding: 20px 30px;
-  height: 600px;
+  margin-top: 140px;
+  height: 740px;
 }
 .section-banner .signup-form h1 {font-family: Ribeye;}
 .section-banner .signup-form h4 {
@@ -128,12 +127,24 @@ a {text-decoration: none;}
 .section-banner .signup-form form .d-flex div:last-child {margin-left: 3.5px;}
 @media (max-width:576px) {
   .section-header .navbar ul.navbar-nav li.nav-item a.nav-link {padding-left: 0 !important;}
-  .section-banner {margin-top: 120px;}
-  .section-banner .carousel-inner {margin-top: 600px;}
+  .section-banner {
+    height: 773px !important;
+  }
+  .section-banner .carousel-inner {margin-top: 15px;}
   .section-banner .signup-form form select {background-position-x: 85%;}
 }
 @media (max-width:768px) {
-  .section-banner {height: 625px;}
-  .section-banner .carousel-inner {margin-top: 600px;}
-  .section-banner .signup-form {height: 575px;}
+  .section-banner {
+    height: 758px;
+    margin-top: 110px;
+  }
+  .section-banner .carousel-inner .carousel-item .slide-1,
+  .section-banner .carousel-inner .carousel-item .slide-2,
+  .section-banner .carousel-inner .carousel-item .slide-3 {
+    margin-top: 18px;
+  }
+  .section-banner .signup-form {
+    margin-top: 18px;
+    height: 740px;
+  }
 }

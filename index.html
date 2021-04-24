@@ -7,6 +7,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./app/scripts/css/bootstrap.min.css">
     <link rel="stylesheet" href="./app/scripts/css/icofont.min.css">
+    <link rel="stylesheet" href="./app/scripts/css/normalize.min.css">
+    <link rel="stylesheet" href="./app/scripts/css/filepond-plugin-image-preview.min.css">
+    <link rel="stylesheet" href="./app/scripts/css/filepond.min.css">
+    <link rel="stylesheet" href="./app/scripts/css/external.css">
     <link rel="stylesheet" href="./app/scripts/css/style.css">
     <title>Diverse Dating</title>
   </head>
@@ -85,7 +89,9 @@
               <h1 class="text-center mt-5">Join, it's <span class="text-fc">Free!</span></h1>
               <h4 class="text-center pb-2">Start Dating Today</h4>
               <form action="#">
-                <div class="d-flex mt-5">
+                <!-- Profile Picture -->
+                <input type="file" class="filepond"name="filepond"accept="image/png, image/jpeg, image/gif"/>
+                <div class="d-flex mt-4">
                   <!-- First Name -->
                   <div class="input-group w-50">
                     <span class="input-group-text" id="basic-addon1"><i class="icofont-ui-user"></i></span>
@@ -170,6 +176,16 @@
     
     <!-- JS -->
     <script src="./app/scripts/js/bootstrap.bundle.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-file-encode.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-file-validate-type.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-image-exif-orientation.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-image-crop.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-image-resize.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-image-transform.min.js"></script>
+    <script src="./app/scripts/js/filepond-plugin-image-preview.min.js"></script>
+    <script src="./app/scripts/js/filepond.min.js"></script>
+    <script src="./app/scripts/js/external.js"></script>
     <script src="./app/scripts/js/main.js"></script>
+        
   </body>
 </html>
